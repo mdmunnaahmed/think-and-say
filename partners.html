@@ -1,0 +1,374 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Think and Say™ | Let's talk about it, w/ Think & Say - (Interviews, Podcasts & Shows)</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16" />
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/lib/animate.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/8ee1ad1e03.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+        }
+
+        #nav-home {
+            font-size: 26px;
+            color: #979494;
+        }
+
+        #nav-home:hover {
+            color: #208420;
+            transform: scale(1.2);
+        }
+
+        footer a {
+            color: #418cdd;
+        }
+
+        .all-text-wrap {
+            margin-inline: auto;
+            text-align: justify;
+        }
+
+        .all-text-wrap .banner-text {
+            max-width: 900px;
+            text-align: start;
+        }
+
+        .one-page-logo {
+            max-width: 500px;
+            margin-inline: auto;
+            width: 100%;
+        }
+
+        .follow-icon {
+            width: 60px;
+        }
+
+        @media (max-width: 1199px) {
+            .all-text-wrap .banner-text {
+                max-width: 700px;
+                font-size: 20px;
+            }
+
+            .one-page-logo {
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .all-text-wrap .banner-text {
+                max-width: 600px;
+                font-size: 19px;
+            }
+
+            .one-page-logo {
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .one-page-logo {
+                max-width: 250px;
+            }
+
+            .all-text-wrap .banner-text {
+                font-size: 18px;
+            }
+        }
+
+        ul.social-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px 15px;
+            padding: 0;
+        }
+
+        ul.social-links li:nth-child(2) {
+            transform: translateX(50px);
+        }
+
+        ul.social-links li:nth-child(4) {
+            transform: translateX(50px);
+        }
+
+        ul.social-links-two li:nth-child(2) {
+            transform: translateX(-50px);
+        }
+
+        ul.social-links-two li:nth-child(4) {
+            transform: translateX(-50px);
+        }
+
+        ul.social-links li:nth-child(1) a {
+            animation: bounceUp 3s ease-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        ul.social-links li:nth-child(2) a {
+            animation: bounceUp 3s ease-out infinite;
+            animation-delay: 1s;
+        }
+
+        ul.social-links li:nth-child(3) a {
+            animation: bounceUp 3s ease-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        ul.social-links li:nth-child(4) a {
+            animation: bounceUp 3s ease-out infinite;
+            animation-delay: 2s;
+        }
+
+        ul.social-links li a {
+            width: 35px;
+            height: 35px;
+        }
+
+        ul.social-links li a img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .social-links-one {
+            position: absolute;
+            left: 30px;
+            bottom: 0;
+        }
+
+        .social-links-two {
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+        }
+
+        @media (max-width: 1600px) {
+            .social-links {
+                bottom: 150px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .social-links {
+                bottom: 0;
+                position: relative;
+                margin-top: 35px;
+            }
+
+            .social-links-one {
+                left: 20px;
+            }
+
+            .social-links-two {
+                right: 20px;
+            }
+
+            ul.social-links li a {
+                width: 66px;
+                height: 66px;
+            }
+        }
+
+        @keyframes bounceUp {
+            10% {
+                transform: translateY(-20px);
+            }
+
+            35% {
+                transform: translateY(0px);
+            }
+        }
+
+        .custom-menu {
+            list-style: none;
+            gap: 15px;
+            font-weight: 500;
+        }
+
+        .coming-soon-bg {
+            /* height: 100dvh; */
+            text-align: center;
+            background-size: cover;
+        }
+
+        .coming-soon-text {
+            max-width: 700px;
+            margin-inline: auto;
+            text-align: center;
+        }
+
+        .partner-area {
+            padding: 80px 0;
+        }
+
+        @media (max-width:575px) {
+            .partner-area {
+                padding: 50px 0;
+            }
+        }
+
+        .partner-item {
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: #212529;
+            padding: 50px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .partner-item .image-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: .05;
+            user-select: none;
+        }
+
+        .partner-item .title {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<!-- Home -->
+<div class="d-flex flex-wrap justify-content-between justify-content-lg-start align-items-center px-4 py-3">
+    <a id="nav-home" href="https://www.learnthinksay.com/"><i class="fas fa-house-user"></i></a>
+    <ul class="custom-menu d-flex align-items-center justify-content-start mb-0 ms-lg-5">
+        <li><a href="store.html">Store</a></li>
+        <li><a href="partners.html">Partners</a></li>
+    </ul>
+    <a href="#social-links"><img src="./assets/images/follow.png" alt="follow us" class="follow-icon d-lg-none" /></a>
+</div>
+
+<!-- Partners -->
+<div class="partner-area bg-light">
+    <div class="container">
+        <h2 class="section-title mb-4 mb-sm-5">Our Partners</h2>
+        <div class="row g-3 justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6">
+                <div class="partner-item">
+                    <h2 class="title">Your brand could be here!</h2>
+                    <img src="./assets/images/team.jpg" alt="team" class="image-bg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Partners -->
+
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

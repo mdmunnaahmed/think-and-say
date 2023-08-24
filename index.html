@@ -1,0 +1,362 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Think and Say™ | Let's talk about it, w/ Think & Say - (Interviews, Podcasts & Shows)</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16" />
+  <!-- bootstrap 5  -->
+  <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+  <!-- Icon Link  -->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/lib/animate.css" />
+
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="https://kit.fontawesome.com/8ee1ad1e03.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      background-color: #fff;
+    }
+
+    #nav-home {
+      font-size: 26px;
+      color: #979494;
+    }
+
+    #nav-home:hover {
+      color: #208420;
+      transform: scale(1.2);
+    }
+
+    footer a {
+      color: #418cdd;
+    }
+
+    .all-text-wrap {
+      margin-inline: auto;
+      text-align: justify;
+    }
+
+    .all-text-wrap .banner-text {
+      max-width: 900px;
+      text-align: start;
+    }
+
+    .one-page-logo {
+      max-width: 500px;
+      margin-inline: auto;
+      width: 100%;
+    }
+
+    .follow-icon {
+      width: 60px;
+    }
+
+    @media (max-width: 1199px) {
+      .all-text-wrap .banner-text {
+        max-width: 700px;
+        font-size: 20px;
+      }
+
+      .one-page-logo {
+        max-width: 350px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .all-text-wrap .banner-text {
+        max-width: 600px;
+        font-size: 19px;
+      }
+
+      .one-page-logo {
+        max-width: 350px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .one-page-logo {
+        max-width: 250px;
+      }
+
+      .all-text-wrap .banner-text {
+        font-size: 18px;
+      }
+    }
+
+    ul.social-links {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px 15px;
+      padding: 0;
+    }
+
+    ul.social-links li:nth-child(2) {
+      transform: translateX(50px);
+    }
+
+    ul.social-links li:nth-child(4) {
+      transform: translateX(50px);
+    }
+
+    ul.social-links-two li:nth-child(2) {
+      transform: translateX(-50px);
+    }
+
+    ul.social-links-two li:nth-child(4) {
+      transform: translateX(-50px);
+    }
+
+    ul.social-links li:nth-child(1) a {
+      animation: bounceUp 3s ease-out infinite;
+      animation-delay: 0.5s;
+    }
+
+    ul.social-links li:nth-child(2) a {
+      animation: bounceUp 3s ease-out infinite;
+      animation-delay: 1s;
+    }
+
+    ul.social-links li:nth-child(3) a {
+      animation: bounceUp 3s ease-out infinite;
+      animation-delay: 1.5s;
+    }
+
+    ul.social-links li:nth-child(4) a {
+      animation: bounceUp 3s ease-out infinite;
+      animation-delay: 2s;
+    }
+
+    ul.social-links li a {
+      width: 35px;
+      height: 35px;
+    }
+
+    ul.social-links li a img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .social-links-one {
+      position: absolute;
+      left: 30px;
+      bottom: 0;
+    }
+
+    .social-links-two {
+      position: absolute;
+      right: 30px;
+      bottom: 0;
+    }
+
+    @media (max-width: 1600px) {
+      .social-links {
+        bottom: 150px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .social-links {
+        bottom: 0;
+        position: relative;
+        margin-top: 35px;
+      }
+
+      .social-links-one {
+        left: 20px;
+      }
+
+      .social-links-two {
+        right: 20px;
+      }
+
+      ul.social-links li a {
+        width: 66px;
+        height: 66px;
+      }
+    }
+
+    @keyframes bounceUp {
+      10% {
+        transform: translateY(-20px);
+      }
+
+      35% {
+        transform: translateY(0px);
+      }
+    }
+
+    .custom-menu {
+      list-style: none;
+      gap: 15px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Home -->
+  <div class="d-flex flex-wrap justify-content-between justify-content-lg-start align-items-center px-4 py-3">
+    <a id="nav-home" href="https://www.learnthinksay.com/"><i class="fas fa-house-user"></i></a>
+    <ul class="custom-menu d-flex align-items-center justify-content-start mb-0 ms-lg-5">
+      <li><a href="store.html">Store</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="packages.html">Packages</a></li>
+    </ul>
+    <a href="#social-links"><img src="./assets/images/follow.png" alt="follow us" class="follow-icon d-lg-none" /></a>
+  </div>
+
+  <!-- Banner -->
+  <div class="bg-light py-5 px-3">
+    <div class="pb-lg-4 pt-3">
+      <div class="text-center">
+        <img src="assets/images/think_and_say.png" alt="logo" class="one-page-logo" />
+        <div class="all-text-wrap">
+          <p class="banner-text mt-sm-5 mt-4">
+            THINK & SAY offers commentaries, discussions and interviews, on a variety of topics. Our goal is to educate
+            people through our content creators, by having all types of conversations via
+            interviews, podcasts and shows.
+          </p>
+          <p class="banner-text mt-4">
+            THINK & SAY will ask: The - Who? What? Why? Where? When? and How? In an effort to having ongoing positive
+            discourse, on topics; Such as cultural, finance, health, lifestyle,
+            relationship, religion, politics, sex, and other social issues.
+          </p>
+          <p class="banner-text mb-0 mt-4">We’re not looking to take sides, only eager to place the decision making in
+            the hands of our audience and community.</p>
+          <p class="banner-text mb-0 mt-4">Let's talk about it, w/ THINK & SAY?</p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between px-xl-5 px-sm-4 pb-sm-4 position-relative d-none d-lg-block">
+        <ul class="social-links flex-column social-links-one">
+          <li>
+            <a title="facebook" target="_blank" href="https://www.facebook.com/thinkandsaywhat"><img
+                src="assets/images/facebook.png" alt="facebook" /></a>
+          </li>
+          <li>
+            <a title="twitter" target="_blank" href="https://twitter.com/thinkandsaywhat"><img
+                src="assets/images/twitter.png" alt="twitter" /></a>
+          </li>
+          <li>
+            <a title="instagram" target="_blank" href="https://www.instagram.com/thinkandsaywhat/"><img
+                src="assets/images/instagram.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a title="locals.com" target="_blank" href="https://thinkandsay.locals.com/"><img
+                src="assets/images/local3.png" alt="locals" /></a>
+          </li>
+        </ul>
+        <ul class="social-links flex-column social-links-two">
+          <li>
+            <a title="tiktok" target="_blank" href="https://www.tiktok.com/@thinkandsaywhat"><img
+                src="assets/images/tik-tok.png" alt="tiktok" /></a>
+          </li>
+          <li>
+            <a title="youtube" target="_blank" href="https://www.youtube.com/@thinkandsay"><img
+                src="assets/images/youtube.png" alt="youtube" /></a>
+          </li>
+          <li>
+            <a title="twtich TV" target="_blank" href="https://www.twitch.tv/thinkandsay"><img
+                src="assets/images/twitch.png" alt="twtich" /></a>
+          </li>
+          <li>
+            <a title="rumble" target="_blank" href="https://rumble.com/thinkandsay"><img src="assets/images/rumble3.png"
+                alt="rumble" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between px-xl-5 px-sm-4 pb-sm-4 position-relative d-lg-none"
+        id="social-links">
+        <ul class="social-links flex-column social-links-one">
+          <li>
+            <a title="facebook" target="_blank" href="https://www.facebook.com/thinkandsaywhat"><img
+                src="assets/images/facebook3.png" alt="facebook" /></a>
+          </li>
+          <li>
+            <a title="twitter" target="_blank" href="https://twitter.com/thinkandsaywhat"><img
+                src="assets/images/twitter3.png" alt="twitter" /></a>
+          </li>
+          <li>
+            <a title="instagram" target="_blank" href="https://www.instagram.com/thinkandsaywhat/"><img
+                src="assets/images/instagram3.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a title="locals.com" target="_blank" href="https://thinkandsay.locals.com/"><img
+                src="assets/images/local33.png" alt="locals" /></a>
+          </li>
+        </ul>
+        <ul class="social-links flex-column social-links-two">
+          <li>
+            <a title="tiktok" target="_blank" href="https://www.tiktok.com/@thinkandsaywhat"><img
+                src="assets/images/tik-tok3.png" alt="tiktok" /></a>
+          </li>
+          <li>
+            <a title="youtube" target="_blank" href="https://www.youtube.com/@thinkandsay"><img
+                src="assets/images/youtube3.png" alt="youtube" /></a>
+          </li>
+          <li>
+            <a title="twtich TV" target="_blank" href="https://www.twitch.tv/thinkandsay"><img
+                src="assets/images/twitch3.png" alt="twtich" /></a>
+          </li>
+          <li>
+            <a title="rumble" target="_blank" href="https://rumble.com/thinkandsay"><img
+                src="assets/images/rumble33.png" alt="rumble" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Banner -->
+
+  <footer>
+    <div class="container">
+      <hr />
+      <div class="row d-flex align-items-center pb-3">
+        <div class="col-auto">
+          <a class="text-title-3 text-dark fw-bold" href="/">Think & Say</a>
+        </div>
+        <div class="col">
+          <div class="text-secondary">
+            Copyright <i style="font-size: 13" class="far fa-copyright"></i> 2018 -
+            <?php echo(date('Y')); ?>
+            | The Think & Say - wordmark, logos, tagline, slogans and trade dress are Trademarks of Learn Think
+            Say.<br />
+            All other logos and trademarks rights are reserved by their respective entities. | <a
+              href="https://learnthinksay.com/">Learnthinksay.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery library -->
+  <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap 5 js -->
+  <script src="assets/js/lib/bootstrap.min.js"></script>
+
+  <!-- Main js -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>We are Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" type="Image/png" />
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/counter.css" />
+    <!-- CSS end here -->
+    <!-- Google fonts start here -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <!-- Google fonts end here -->
+
+    <style>
+        #nav-home {
+            font-size: 26px;
+            color: #979494;
+        }
+
+        #nav-home:hover {
+            color: #208420;
+            transform: scale(1.2);
+        }
+
+        i {
+            display: inline-block;
+        }
+
+        .go-bacl {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body class="bg-pattern">
+
+    <!-- Main container start here -->
+    <section class="main-wrapper">
+        <!-- Slogan start here -->
+        <section class="slogan">
+            <h6 class="subTitle">we are working on something <span class="highlight">awesome!</span></h6>
+            <p>We're working on launching our merch store.</p>
+        </section>
+        <!-- Slogan end here -->
+        <!-- Count Down start here -->
+        <section class="count-down-wrapper">
+            <ul class="row count-down gy-4">
+                <div class="col-lg-3 col-6">
+                    <li>
+                        <input class="knob days shadow-none" data-readonly=true data-min="0" data-max="365"
+                            data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#34aadc"
+                            data-bgColor="#e1e2e6" data-angleOffset="180">
+                        <span id="days-title">days</span>
+                    </li>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <li>
+                        <input class="knob hour shadow-none" data-readonly=true data-min="0" data-max="24"
+                            data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#4cd964"
+                            data-bgColor="#e1e2e6" data-angleOffset="180">
+                        <span id="hours-title">hours</span>
+                    </li>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <li>
+                        <input class="knob minute shadow-none" data-readonly=true data-min="0" data-max="60"
+                            data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#ff9500"
+                            data-bgColor="#e1e2e6" data-angleOffset="180">
+                        <span id="mins-title">minutes</span>
+                    </li>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <li>
+                        <input class="knob second shadow-none" data-readonly=true data-min="0" data-max="60"
+                            data-width="260" data-height="260" data-thickness="0.07" data-fgcolor="#ff3b30"
+                            data-bgColor="#e1e2e6" data-angleOffset="180">
+                        <span id="secs-title">seconds</span>
+                    </li>
+                </div>
+            </ul>
+        </section>
+        <!-- Count Down end here -->
+
+        <div class="container py-5">
+            <h3 class="image-title">What's Coming New!</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="assets/images/cap-with-thinker-logo.png" alt="" class="w-100">
+                </div>
+                <div class="col-sm-6">
+                    <img src="assets/images/t-shirt.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter start here -->
+        <section class="newsletter row">
+            <form class="contact-form col-md-8 col-xl-6">
+                <div class="form-group">
+                    <div><span class="email-ico"><img src="img/ico-mail.png" alt=""></span>
+                        <input type="email" name="email" id="email" class="required email"
+                            placeholder="Enter your email here ">
+                        <button class="btn-submit">Get Notified <i class="fas fa-angle-right"
+                                style="margin-left: 4px"></i></button>
+                    </div>
+                </div>
+                <div class="form-respond"></div>
+            </form>
+        </section>
+        <!-- Newsletter start here -->
+        <!-- Social icons start here -->
+        <ul class="connect-us d-flex justify-content-center">
+            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <!-- Social icons end here -->
+        <!-- Footer start here -->
+        <footer class="text-center">
+            <a href="index.html" class="go-bacl">Go Back</a>
+        </footer>
+        <!-- Footer end here -->
+    </section>
+    <!-- Main container start here -->
+
+    <!-- jQuery library -->
+    <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/jquery.ccountdown.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/general.js"></script>
+    <!-- Javascript framework and plugins end here -->
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.btn,
+.cmn--btn {
+  padding: 10px 25px;
+  font-weight: 600;
+  outline: none !important;
+  box-shadow: 0 3px 25px 3px hsl(var(--dark) / 0.2) !important;
+  @extend %transition;
+  border-radius: 5px 25px 5px 5px;
+  z-index: 1;
+  &.btn--lg {
+    padding: 13px 45px !important;
+    @include breakpoint(lg) {
+      font-size: 18px;
+    }
+  }
+  &.btn--md {
+    padding: 8px 25px !important;
+    font-size: 15px;
+  }
+  &.btn--sm {
+    padding: 5px 15px !important;
+    font-size: 14px;
+  }
+  &.btn--xs {
+    padding: 0px 10px !important;
+    font-size: 13px;
+  }
+}
+.cmn--btn {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	img {
+		max-width: 22px;
+	}
+  color: hsl(var(--white)) !important;
+  border-color: #208420 ;
+  background-color: #208420;
+	&:hover {
+    background-color: #293756;
+    border-color: #293756;
+	}
+}
+.btn-style-two {
+  background-color: #293756;
+  border-color: #293756;
+	&:hover {
+    border-color: #208420 ;
+    background-color: #208420;
+	}
+}

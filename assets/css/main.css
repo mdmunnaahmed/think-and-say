@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.banner-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn,
+.cmn--btn, a,
+img,
+.name {
+    transition: all 0.3s;
+}
+
+@font-face {
+    font-family: "Bariol";
+  src: url("bariol.ttf");
+}
+
+:root {
+    --heading-font: "Bariol", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+    --heading: 222 35% 25%;
+    --body: 230 12% 28%;
+    --border: 0 0% 90%;
+    --base-h: 347;
+    --base-s: 72%;
+    --base-l: 49%;
+    --base: var(--base-h) var(--base-s) var(--base-l);
+    --light-h: 148;
+    --light-s: 0%;
+    --light-l: 95%;
+    --light: var(--light-h) var(--light-s) var(--light-l);
+    --light-50: var(--light-h) var(--light-s) calc(var(--light-l) + 33%);
+    --light-100: var(--light-h) var(--light-s) calc(var(--light-l) + 20%);
+    --light-200: var(--light-h) var(--light-s) calc(var(--light-l) + 15%);
+    --light-300: var(--light-h) var(--light-s) calc(var(--light-l) + 10%);
+    --light-400: var(--light-h) var(--light-s) calc(var(--light-l) + 2%);
+    --light-600: var(--light-h) var(--light-s) calc(var(--light-l) - 2%);
+    --light-700: var(--light-h) var(--light-s) calc(var(--light-l) - 10%);
+    --light-800: var(--light-h) var(--light-s) calc(var(--light-l) - 15%);
+    --light-900: var(--light-h) var(--light-s) calc(var(--light-l) - 20%);
+    --white: 0 0% 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: hsl(var(--body));
+    font-family: var(--body-font);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(var(--body));
+}
+
+a:hover {
+    color: hsl(var(--base));
+}
+
+span,
+sub,
+sup,
+a {
+    display: inline-block;
+}
+
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(var(--white));
+    z-index: 9999;
+    bottom: 30px;
+    right: 30px;
+    font-size: 18px;
+    position: fixed;
+    transform: translateY(150px);
+    background: hsl(var(--base));
+    border-radius: 3px;
+}
+
+.scrollToTop:hover {
+    color: hsl(var(--white));
+}
+
+.scrollToTop.active {
+    transform: translateY(0);
+    animation: bounceInDown 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.3;
+    color: hsl(var(--heading));
+    font-family: var(--heading-font);
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+    color: hsl(var(--heading));
+}
+
+.btn,
+.cmn--btn {
+    padding: 10px 25px;
+    font-weight: 600;
+    outline: none !important;
+    box-shadow: 0 3px 25px 3px hsl(var(--dark)/0.2) !important;
+    border-radius: 5px 25px 5px 5px;
+    z-index: 1;
+}
+
+.btn.btn--lg,
+.cmn--btn.btn--lg {
+    padding: 13px 45px !important;
+}
+
+@media (min-width: 992px) {
+    .btn.btn--lg,
+.cmn--btn.btn--lg {
+        font-size: 18px;
+    }
+}
+
+.btn.btn--md,
+.cmn--btn.btn--md {
+    padding: 8px 25px !important;
+    font-size: 15px;
+}
+
+.btn.btn--sm,
+.cmn--btn.btn--sm {
+    padding: 5px 15px !important;
+    font-size: 14px;
+}
+
+.btn.btn--xs,
+.cmn--btn.btn--xs {
+    padding: 0px 10px !important;
+    font-size: 13px;
+}
+
+.cmn--btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hsl(var(--white)) !important;
+    border-color: #208420;
+    background-color: #208420;
+}
+
+.cmn--btn img {
+    max-width: 22px;
+}
+
+.cmn--btn:hover {
+    background-color: #293756;
+    border-color: #293756;
+}
+
+.btn-style-two {
+    background-color: #293756;
+    border-color: #293756;
+}
+
+.btn-style-two:hover {
+    border-color: #208420;
+    background-color: #208420;
+}
+
+.banner-title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+@media (max-width: 1600px) {
+    .banner-title {
+        font-size: 56px;
+    }
+}
+
+.banner-title sup {
+    color: #678;
+    font-size: 22px;
+    bottom: 0;
+    transform: translate(-8px, -17px);
+}
+
+.banner-text {
+    font-size: 24px;
+    max-width: 600px;
+    margin-top: 15px;
+    line-height: 1.5;
+    text-align: center;
+    margin-inline: auto;
+}
+
+@media (max-width: 1600px) {
+    .banner-text {
+        font-size: 22px;
+    }
+}
+
+.banner-text sup {
+    font-size: 15px;
+    transform: translate(-2px, -5px);
+}
+
+.bg-banne-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.banner-section {
+    background-color: hsl(var(--light-900)/0.15);
+    padding: 100px 0;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@media (max-width: 1600px) {
+    .banner-section {
+        padding: 50px 0;
+    }
+}
+
+.banner-section .banner-logo {
+    margin-bottom: 40px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    background-color: hsl(var(--light));
+    border-radius: 50%;
+}
+
+@media (max-width: 1600px) {
+    .banner-section .banner-logo {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.banner-section .cmn--btn {
+    min-width: 180px;
+    justify-content: center;
+}
+
+.banner-content-left {
+    width: 49%;
+    text-align: center;
+}
+
+.banner-content-right {
+    width: 49%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.banner-content-right .cmn--btn {
+    border-radius: 25px 0 0 0;
+}
+
+.middle-devider {
+    width: 10px;
+    background-color: #F4B400;
+    position: relative;
+    border-radius: 20px;
+}
+
+.middle-devider .dot {
+    position: absolute;
+    left: 0;
+    width: 15px;
+    transform: translateX(-20%);
+    aspect-ratio: 1;
+    background-color: hsl(var(--base));
+    border-radius: 50%;
+}
+
+.middle-devider .dot1 {
+    top: -50px;
+    background-color: #DB4437;
+}
+
+.middle-devider .dot2 {
+    background-color: #4285F4;
+    top: -100px;
+}
+
+.middle-devider .dot3 {
+    bottom: -50px;
+    background-color: #0F9D58;
+}
+
+.middle-devider .dot4 {
+    bottom: -100px;
+    background-color: #4285F4;
+}
+
+.middle-devider .dot5 {
+    bottom: -150px;
+}
+/*# sourceMappingURL=main.css.map */
