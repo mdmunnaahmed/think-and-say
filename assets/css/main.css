@@ -437,9 +437,13 @@ footer a {
   box-shadow: 1px 2px 6px #4e084e87;
 }
 
-.message-item-icon.facebook .icon,
+.message-item-icon.facebook .icon {
+  background: url("../images/messenger-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .message-item-icon.facebook .content {
-  background: #1674ea;
+  background: #446CFF;
   box-shadow: 1px 2px 6px #201f2087;
 }
 
